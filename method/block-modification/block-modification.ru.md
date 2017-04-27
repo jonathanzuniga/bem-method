@@ -55,7 +55,7 @@
 
 #### Изменение внешнего вида блока
 
-Модификатор `theme` в значении `sun` задаст фон желтого цвета:
+Модификатор `theme` в значении `sun` задает желтый фон всплывающему окну:
 
 ```html
     <!-- Блок popup с модификатором theme в значении sun-->
@@ -64,13 +64,13 @@
 
 Отображение
 
-![Yellow background modificator for popup block]()
+![Yellow background modifier for popup block](https://github.com/innabelaya/bem-docs/blob/master/pics/block-modification/popup_theme_sun.png?raw=true)
 
 #### Изменение поведения блока
 
-Модификатор `direction` отвечает за направление отображения попапа.
+Модификатор `direction` отвечает за направление открытия всплывающего окна.
 
-Модификатор `direction` в значении `left` открывает попап влево:
+Модификатор `direction` в значении `left` открывает всплывающее влево:
 
 ```html
     <!-- Блок popup -->
@@ -79,23 +79,23 @@
 
 Отображение
 
-![Left direction modificator for popup block]()
+![Left direction modifier for popup block](https://github.com/innabelaya/bem-docs/blob/master/pics/block-modification/popup_left.png?raw=true)
 
-Модификатор `direction` в значении `right` открывает попап вправо:
+Модификатор `direction` в значении `bottom` открывает всплывающее окно вниз:
 
 ```html
     <!-- Блок popup -->
-    <div class="popup popup_direction_right">...</div>
+    <div class="popup popup_direction_bottom">...</div>
 ```
 
 Отображение
 
-![Right direction modificator for popup block]()
+![Bottom direction modifier for popup block](https://github.com/innabelaya/bem-docs/blob/master/pics/block-modification/popup_bottom.png?raw=true)
 
 
 #### Изменение состояния блока
 
-Модификатор `focused` приводит блок в состояние ”в фокусе”:
+Модификатор `focused` приводит блок в состояние «в фокусе»:
 
 ```html
     <!-- Блок popup -->
@@ -104,7 +104,7 @@
 
 Отображение
 
-![Focused popup block]()
+![Focused popup block](https://github.com/innabelaya/bem-docs/blob/master/pics/block-modification/popup_focused.png?raw=true)
 
 
 > Подробнее о [правилах описания булевых модификаторов](https://ru.bem.info/methodology/naming-convention/#Модификатор-блока)
@@ -118,24 +118,23 @@
     <div class="popup popup_has-tail">...</div>
 ```
 
-
-![Modificator for adding close icon to popup]()
+![Modifier for adding tail element to popup](https://github.com/innabelaya/bem-docs/blob/master/pics/block-modification/popup__tail_1.png?raw=true)
 
 #### Добавляем несколько модификаторов 
 
 Добавим модификаторы:
 
 * `theme` в значении `sun`;
-* `direction` в значении `left`. 
+* `direction` в значении `bottom`. 
 
 ```html
     <!-- Блок popup -->
-    <div class="popup popup_theme_sun popup_direction_left">...</div>
+    <div class="popup popup_theme_sun popup_direction_bottom">...</div>
 ```
 
-Попап откроется влево и будет иметь желтый фон.
+Попап откроется вниз и будет иметь желтый фон.
 
-![Left direction modificator for yellow popup block]()
+![Bottom direction modifier for yellow popup block](https://github.com/innabelaya/bem-docs/blob/master/pics/block-modification/popup_bottom_theme_sun.png?raw=true)
 
 
 ## Уровнем переопределения
